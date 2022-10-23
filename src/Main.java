@@ -41,5 +41,7 @@ public class Main {
         p1.setPrice(14);
         ProductManager pm = new ProductManager();
         pm.add(p1);
+        Product p2 = new Product(1,"tel","iphone 5s",1400);
+        pm.add(p2);
     }
 }
