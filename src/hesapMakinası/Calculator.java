@@ -4,6 +4,14 @@ public class Calculator {
     public int topla(int a,int b){
         return a+b;
     }
+    public int topla(int... a){
+        int toplam = 0;
+        for (int sayi:a
+             ) {
+            toplam += sayi;
+        }
+        return toplam;
+    }
     public int cikar(int a,int b) {
         return a-b;
     }

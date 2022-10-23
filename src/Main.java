@@ -43,5 +43,6 @@ public class Main {
         pm.add(p1);
         Product p2 = new Product(1,"tel","iphone 5s",1400);
         pm.add(p2);
+        System.out.println("overloading: "+cal.topla(1,2,3,4,5,6));
     }
 }
