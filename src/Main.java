@@ -1,4 +1,6 @@
+import entities.Product;
 import hesapMakinası.Calculator;
+import manager.ProductManager;
 
 public class Main {
     public static void main(String[] args) {
@@ -32,5 +34,12 @@ public class Main {
 
         Calculator cal = new Calculator();
         System.out.println(cal.bol(13,0));
+        Product p1 = new Product();
+        p1.name = "pc";
+        p1.id = 1;
+        p1.description = "iste oyle bir se";
+        p1.price = 100;
+        ProductManager pm = new ProductManager();
+        pm.add(p1);
     }
 }
