@@ -1,3 +1,4 @@
+import Person.Customer;
 import entities.Product;
 import hesapMakinası.Calculator;
 import manager.ProductManager;
@@ -44,5 +45,10 @@ public class Main {
         Product p2 = new Product(1,"tel","iphone 5s",1400);
         pm.add(p2);
         System.out.println("overloading: "+cal.topla(1,2,3,4,5,6));
+        Customer c1 = new Customer();
+        c1.name = "deneme";
+        Product[] ps;
+        ps = new Product[]{p1, p2};
+        c1.products = ps;
     }
 }
