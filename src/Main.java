@@ -1,5 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        CustomerManager c = new CustomerManager();
+        c.add();
+        c.delete();
+        c.update();
     }
 }
